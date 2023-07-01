@@ -1,0 +1,301 @@
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Fraunces:wght@200;700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@400;700&family=Montserrat:wght@200&family=Outfit:wght@300;400;600&family=Poppins:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/* Variables */
+:root{
+    /* list items */
+ --Light_red: hsl(0, 100%, 67%);
+ --Orange_yellow: hsl(39, 100%, 56%);
+ --Green_teal: hsl(166, 100%, 37%);
+ --Cobalt_blue: hsl(234, 85%, 45%);
+ /* background result*/
+ --Light_slate_blue : hsl(252, 100%, 67%);
+--Light_royal_blue : hsl(241, 81%, 54%);
+/* circle */
+--Violet_blue : hsla(256, 72%, 46%, 1);
+/* button */
+--Persian_blue: hsla(241, 72%, 46%, 0);
+/* background */
+ --White: hsl(0, 0%, 100%);
+ --Pale_blue: hsl(221, 100%, 96%);
+ --Light_lavender: hsl(241, 100%, 89%);
+ --Dark_gray_blue: hsl(224, 30%, 27%);
+
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+/* Mobile styles */
+.container{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    
+}
+.result{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:60vh;
+    width:100%;
+    padding:20px 30px;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+    background:linear-gradient(180deg,var(--Light_slate_blue),var(--Light_royal_blue));
+}
+.result h5{
+ color:var(--Light_lavender);
+padding:20px;
+font-size:25px;
+font-weight:500;
+}
+.score{
+    display:flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background:linear-gradient(180deg,var(--Violet_blue),hsla(252, 65%, 55%, 0.089)) ;
+    width:150px;
+    height:150px;
+    padding:10px 30px;
+    
+}
+.score h3{
+    font-size:70px;
+    color:var(--Pale_blue);
+    padding-left:10px;
+    padding-top:5px;
+}
+.score p{
+    padding-left:20px;
+    color:var(--Light_lavender);
+    font-size:20px;
+    font-weight: 100;
+    padding-top:10px;
+}
+.text{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:5px;
+    padding-top:30px;
+
+    
+    
+    font-weight: 500;
+}
+
+.text h4{
+    font-size:25px;
+    padding-bottom:8px;
+    font-weight: 700;
+    color:var(--White);
+}
+.text p{
+    color:var(--Light_lavender);
+    padding-left:10px;
+    font-size:20px;
+    padding-bottom:5px;
+    text-align: center;
+}
+.summary{
+    flex-direction: column;
+    height:50vh;
+    padding:0 20px;
+    width:95%;
+}
+.summary h4{
+    padding:20px 0 5px 0;
+    color:var(--Dark_gray_blue);
+    font-size:20px;
+}
+.skills{
+    height:40px;
+    font-size:18px;
+    margin:20px 0 10px;
+    padding:12px ;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.info{
+    display:flex;
+    flex-direction: row;
+}
+.icon{
+    padding-right:10px;
+}
+ #id1 {
+    color:var(--Light_red);
+    background-color: hsla(0, 100%, 67%, 0.13);
+}
+#id2{
+    color:var(--Orange_yellow);
+    background-color: hsla(39, 100%, 56%, 0.13);
+}
+#id3{
+    color:var(--Green_teal);
+    background-color: hsla(166, 100%, 37%, 0.13);
+}
+#id4{
+    color:var(--Cobalt_blue);
+    background-color: hsla(234, 85%, 45%, 0.13);
+}
+.scores{
+    color:var(--Dark_gray_blue);
+    font-weight: bold;
+    
+}
+.scores span{
+    color:rgb(160, 154, 154);
+    
+}
+.btn{
+    height:55px;
+    border-radius: 25px;
+    margin:20px 0 10px;
+    display:flex;
+    justify-content:center;
+    background-color:hsla(242, 82%, 13%, 0.89);
+    padding:10px 25px;
+    font-size:25px;
+    color:var(--Light_lavender);
+}
+/* Small tablets style */
+@media screen and (min-width:620px) {
+    .container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:450px;
+        width:320px;;
+        border-radius:25px;
+        padding:30px 15px;
+}
+.summary{
+        display:flex;
+        justify-content: left;
+        flex-direction: column;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+       width:320px;
+      box-shadow:5px 10px 18px rgb(209, 209, 209);
+      height:450px;
+      padding:0 30px;
+}
+.result h5{
+    
+   padding-bottom:15px;
+   font-size:25px;
+   font-weight:500;
+   margin-bottom:20px;
+   }
+   .score{  
+    width:180px;
+    height:180px;
+    padding:0 30px;   
+}
+.score h3{
+    font-size:75px;
+    padding-left:20px;
+    padding-top:15px;
+}
+.score p{
+    padding-left:30px;
+    font-size:25px;
+    font-weight: 100;
+    padding-top:8px;
+}
+.text h4{
+    font-size:25px;
+    padding-bottom:10px;
+}
+.text{
+    padding-top:15px;
+}
+.text p{
+    font-size:23px;
+    text-align: center;
+}
+.summary h4{
+    font-size:30px;
+    
+}
+.skills{
+    height: 40px;
+    font-size:20px;
+    font-weight: 500;
+    margin:15px 0;
+    padding:10px 10px 10px;
+}
+.info{
+    padding-right:40px;
+}
+}
+/* Large tablets and laptops style */
+@media screen and (min-width:960px) {
+    .container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:450px;
+        width:320px;
+        border-radius:25px;
+        padding:30px 15px;
+}
+.summary{
+        display:flex;
+        justify-content: left;
+        flex-direction: column;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+       width:320px;
+      box-shadow:5px 10px 18px rgb(209, 209, 209);
+      height:450px;
+      padding:20px 40px;
+}
+.summary h4{
+    padding-bottom:10px;
+}
+.skills{
+    height: 40px;
+    font-size:15px;
+    font-weight: 500;
+    margin:15px 0;
+    padding:10px 10px 10px;
+}
+.btn{
+    height:50px;
+    font-size:25px;
+    margin-top:20px;
+}
+}
+ 
+
